@@ -1,0 +1,63 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Node Modules (if using Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Files
+dist/
+build/
+.cache/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Backup Files
+*.bak
+*.backup
+*-backup.*
+
+# Image Editing Files
+*.psd
+*.ai
+*.sketch
+
+# Documentation Draft Files
+NOTES.md
+TODO.md
+DRAFT.md
+
+# Personal Files (Don't commit)
+PERSONAL_NOTES.txt
+
+# Keep these folders but ignore contents (use README.md as placeholder)
+# Images will be committed, but this helps track empty folders

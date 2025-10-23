@@ -1,7 +1,552 @@
-<!doctype html>
-<html>
-  <head><meta charset="utf-8"><title>Shahriar Ferdoush</title></head>
-  <body>
-    <h1>Hello — Shahriar's portfolio coming soon</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shahriar Ferdoush Sifat - Full-Stack Software Engineer & AI/ML Researcher">
+    <title>Shahriar Ferdoush Sifat | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">SFS</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Hi, I'm Shahriar Ferdoush Sifat</span>
+                </h1>
+                <p class="hero-subtitle">Full-Stack Software Engineer & AI/ML Researcher</p>
+                <p class="hero-description">
+                    Building intelligent systems with Large Language Models and modern web technologies
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Shahriar-Ferdoush" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shahriar-ferdoush-sifat/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:shahriar.ss1212@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-placeholder-large">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-intro">
+                        I am a Computer Science and Engineering graduate from BUET with a passion for 
+                        <strong>Artificial Intelligence</strong> and <strong>Machine Learning</strong>, 
+                        particularly focused on Large Language Models.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h3>Education</h3>
+                                <p>B.Sc. in Computer Science and Engineering</p>
+                                <p class="detail-sub">Bangladesh University of Engineering and Technology (BUET)</p>
+                                <p class="detail-sub">July 2024</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h3>Achievements</h3>
+                                <p>Dean's Award, BUET (2020)</p>
+                                <p>Regional Champion, Bangladesh Physics Olympiad (2016)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research/Thesis Section -->
+    <section id="research" class="research section section-dark">
+        <div class="container">
+            <h2 class="section-title">Research & Thesis</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-tag">Ongoing - Masters</div>
+                    <h3>Building Small Adaptive LLMs</h3>
+                    <p class="research-subtitle">A Pipeline for Task-Specific Fine-Tuning, Model Merging, and Knowledge Updates</p>
+                    <p>Developing an end-to-end pipeline to tune small large language models finetuned for diverse tasks and merge them using different merging methods. Finally, using lifelong knowledge editing techniques to update merged models for keeping them up-to-date with new information.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">HuggingFace</span>
+                        <span class="tech-tag">Model Merging</span>
+                        <span class="tech-tag">Knowledge Editing</span>
+                    </div>
+                    <div class="research-links">
+                        <a href="https://github.com/Shahriar-Ferdoush/Model-Merging" target="_blank" class="link-btn">
+                            <i class="fab fa-github"></i> Repository 1
+                        </a>
+                        <a href="https://github.com/Shahriar-Ferdoush/test" target="_blank" class="link-btn">
+                            <i class="fab fa-github"></i> Repository 2
+                        </a>
+                    </div>
+                </div>
+                <div class="research-card">
+                    <div class="research-tag">Completed - Undergraduate</div>
+                    <h3>Enhancing OCT with Modified Deep Image Prior</h3>
+                    <p class="research-subtitle">Improved Denoising via Early Stopping Convergence</p>
+                    <p>Uses a network architecture as a prior to learn the features for the image and uses the generative technique to iteratively generate denoised images based on only one noisy data. Achieved better denoising performance with significantly fewer iterations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Matplotlib</span>
+                        <span class="tech-tag">U-Net</span>
+                    </div>
+                    <div class="research-links">
+                        <a href="https://www.kaggle.com/code/shahriarferdoush/full-run-deep-image-prior-paper-unet" target="_blank" class="link-btn">
+                            <i class="fas fa-external-link-alt"></i> View on Kaggle
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full-Stack Software Engineer</h3>
+                            <span class="timeline-badge">Fully Remote</span>
+                        </div>
+                        <p class="timeline-company">ResTechAI - USA-based startup</p>
+                        <p class="timeline-date">July 2024 - Present</p>
+                        <ul class="timeline-description">
+                            <li>Developed full-stack AI-driven solutions, including scraping websites and extracting structured/unstructured data using LLMs with the goal of prototyping faster and developing minimum viable products</li>
+                            <li>Automated API access through chat-based interactions</li>
+                            <li>Created RAG pipeline with flexible model and database options managing structured and unstructured data across databases and vector databases</li>
+                            <li>Developed fact checker agents and analytical agents for deep analysis with option to output response on diverse sink options</li>
+                            <li>Deployed and maintained applications in Docker environments for seamless operation across backend, frontend, and local LLMs</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Llama3</span>
+                            <span class="tech-tag">Gemini</span>
+                            <span class="tech-tag">Groq</span>
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">ChromaDB</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Poetry</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Virtual Intern</h3>
+                            <span class="timeline-badge">Internship</span>
+                        </div>
+                        <p class="timeline-company">ERA-InfoTech Limited</p>
+                        <p class="timeline-date">2023</p>
+                        <ul class="timeline-description">
+                            <li>Completed Machine Learning based analysis and clustering of financial transactional data</li>
+                            <li>Performed data cleaning and preprocessing on financial transactional data of 1M users</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section section-dark">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MBTI Personality Prediction</h3>
+                        <p>Fine-tuning BERT model using social media posts of different persons to predict personality types.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">BERT</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <a href="https://colab.research.google.com/drive/1kwehwHfAvy8_h94VZrJTcOGcHcNw4eWn?usp=sharing" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HRXcelerate</h3>
+                        <p>A comprehensive human resource information system including employee management, recruitment tracking, and payroll administration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">System Design</span>
+                        </div>
+                        <a href="https://github.com/utchchhwas/hrxcelerate" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BuyMeAtDaraz</h3>
+                        <p>Scrapes Daraz based on user queries, stores data in database, and provides chat-based product recommendations using LLMs.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Playwright</span>
+                            <span class="tech-tag">Langchain</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">LLM</span>
+                        </div>
+                        <a href="https://github.com/Shahriar-Ferdoush/BuyMeAtDaraz" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GPT2-124M from Scratch</h3>
+                        <p>Built GPT-2 124M parameter model from scratch, tokenized fineweb-edu dataset and trained the model using distributed processes.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Distributed Training</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                        <a href="https://github.com/Shahriar-Ferdoush/GPT2-124M-1B-Token" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fine-tuning Llama 3</h3>
+                        <p>Fine-tuned Llama3-8B model on Doctor-Patient conversational dataset using QLoRA for efficient fine-tuning.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HuggingFace</span>
+                            <span class="tech-tag">Llama 3</span>
+                            <span class="tech-tag">QLoRA</span>
+                        </div>
+                        <a href="https://www.kaggle.com/code/shahriarferdoush/fine-tune-llm-doctor-consulting-dataset" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Surokkha - Vaccination System</h3>
+                        <p>Database project for vaccination and certification tracking with vaccine registration, scheduling, and inventory management.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">OracleSQL</span>
+                            <span class="tech-tag">Database Design</span>
+                            <span class="tech-tag">PL/SQL</span>
+                        </div>
+                        <a href="https://github.com/farhan19999/CSE216-Database-Project" target="_blank" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge proficient">Python</span>
+                        <span class="skill-badge proficient">Java</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">Bootstrap</span>
+                        <span class="skill-badge">React.JS</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Node.JS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">OracleSQL</span>
+                        <span class="skill-badge">SQLite</span>
+                        <span class="skill-badge">ChromaDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>ML & Data Science</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">PyTorch</span>
+                        <span class="skill-badge">Langchain</span>
+                        <span class="skill-badge">Pandas</span>
+                        <span class="skill-badge">NumPy</span>
+                        <span class="skill-badge">Matplotlib</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Others</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">LaTeX</span>
+                        <span class="skill-badge">Poetry</span>
+                        <span class="skill-badge">Adobe Suite</span>
+                        <span class="skill-badge">Blender</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>LLMs & AI Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-badge">Llama 3</span>
+                        <span class="skill-badge">Gemini</span>
+                        <span class="skill-badge">Groq</span>
+                        <span class="skill-badge">Deepseek</span>
+                        <span class="skill-badge">BERT</span>
+                        <span class="skill-badge">GPT-2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section section-dark">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Deep Learning Specialization</h3>
+                    <p class="cert-provider">DeepLearning.AI (via Coursera)</p>
+                    <a href="https://coursera.org/share/87b509b33cf9c13046e29146c1395915" target="_blank" class="cert-verify">
+                        <i class="fas fa-check-circle"></i> Verify Certificate
+                    </a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Mathematics for Machine Learning Specialization</h3>
+                    <p class="cert-provider">Imperial College London (via Coursera)</p>
+                    <a href="https://coursera.org/share/87b509b33cf9c13046e29146c1395915" target="_blank" class="cert-verify">
+                        <i class="fas fa-check-circle"></i> Verify Certificate
+                    </a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Object Oriented Programming with Java</h3>
+                    <p class="cert-provider">Coursera Project Network</p>
+                    <a href="https://coursera.org/share/6aeaeea2c737f029d5830bc51a73d6c1" target="_blank" class="cert-verify">
+                        <i class="fas fa-check-circle"></i> Verify Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:shahriar.ss1212@gmail.com">shahriar.ss1212@gmail.com</a>
+                            <a href="mailto:1805101@ugrad.cse.buet.ac.bd">1805101@ugrad.cse.buet.ac.bd</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+8801758616694">+880 1758616694</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-links-large">
+                        <a href="https://github.com/Shahriar-Ferdoush" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shahriar-ferdoush-sifat/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shahriar Ferdoush Sifat. All rights reserved.</p>
+            <p class="footer-tagline">Built with passion and lots of ☕</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
