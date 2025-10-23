@@ -1,3 +1,23 @@
+/* Responsive profile images for hero and about sections */
+.profile-image {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    margin: 0 auto;
+}
+.profile-image-large {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
 /* ===================================
    CSS Variables - Modern Apple-Inspired Theme
    =================================== */
