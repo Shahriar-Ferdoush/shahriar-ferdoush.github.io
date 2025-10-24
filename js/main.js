@@ -703,6 +703,119 @@ if (document.getElementById("total-commits")) {
 }
 
 // ===================================
+// YouTube Videos
+// ===================================
+
+async function fetchYouTubeVideos() {
+  const channelId = "UCYourChannelId"; // Will be extracted from channel
+  const videosContainer = document.getElementById("youtube-videos");
+
+  if (!videosContainer) return;
+
+  try {
+    // Use YouTube RSS feed (no API key needed)
+    const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+
+    // For now, we'll use a CORS proxy or direct channel URL
+    // Alternative: Use noembed.com or similar service
+    const channelHandle = "ShahriarFerdoush";
+
+    // Fetch channel data using noembed (no API key required)
+    const videos = [];
+
+    // Manual approach: You can manually add your top 3 videos here
+    // Get video IDs from your YouTube channel
+    const topVideoIds = [
+      // Replace these with your actual video IDs from YouTube
+      // To get video ID: https://www.youtube.com/watch?v=VIDEO_ID_HERE
+      "HBuN-4c3BBI",
+      "yjATL_dwYC4",
+      "8eW4sxxyY1s",
+    ];
+
+    for (const videoId of topVideoIds) {
+      try {
+        // Use noembed to get video info (no API key needed)
+        const response = await fetch(
+          `https://noembed.com/embed?url=https://www.youtube.com/watch?v=${videoId}`
+        );
+
+        if (response.ok) {
+          const data = await response.json();
+          videos.push({
+            id: videoId,
+            title: data.title,
+            thumbnail: data.thumbnail_url,
+            author: data.author_name,
+            url: `https://www.youtube.com/watch?v=${videoId}`,
+          });
+        }
+      } catch (error) {
+        console.error(`Error fetching video ${videoId}:`, error);
+      }
+    }
+
+    if (videos.length > 0) {
+      displayVideos(videos);
+    } else {
+      // Show fallback message
+      videosContainer.innerHTML = `
+        <div class="video-error">
+          <i class="fab fa-youtube"></i>
+          <p>Visit my YouTube channel to see my latest videos!</p>
+        </div>
+      `;
+    }
+  } catch (error) {
+    console.error("Error fetching YouTube videos:", error);
+    videosContainer.innerHTML = `
+      <div class="video-error">
+        <i class="fab fa-youtube"></i>
+        <p>Visit my YouTube channel to see my latest videos!</p>
+      </div>
+    `;
+  }
+}
+
+function displayVideos(videos) {
+  const videosContainer = document.getElementById("youtube-videos");
+  if (!videosContainer) return;
+
+  videosContainer.innerHTML = "";
+
+  videos.forEach((video) => {
+    const videoCard = document.createElement("div");
+    videoCard.className = "video-card";
+    videoCard.onclick = () => window.open(video.url, "_blank");
+
+    videoCard.innerHTML = `
+      <div class="video-thumbnail">
+        <img src="${video.thumbnail}" alt="${video.title}" loading="lazy">
+        <div class="video-play-icon">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">${video.title}</h3>
+        <div class="video-stats">
+          <div class="video-stat">
+            <i class="fab fa-youtube"></i>
+            <span>Watch on YouTube</span>
+          </div>
+        </div>
+      </div>
+    `;
+
+    videosContainer.appendChild(videoCard);
+  });
+}
+
+// Load YouTube videos when page loads
+if (document.getElementById("youtube-videos")) {
+  fetchYouTubeVideos();
+}
+
+// ===================================
 // Initialize Everything
 // ===================================
 
