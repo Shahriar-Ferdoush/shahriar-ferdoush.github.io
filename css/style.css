@@ -176,6 +176,16 @@ img {
   background-clip: text;
 }
 
+.section-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ===================================
    Navigation
    =================================== */
