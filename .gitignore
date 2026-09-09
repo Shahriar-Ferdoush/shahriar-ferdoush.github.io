@@ -61,3 +61,7 @@ PERSONAL_NOTES.txt
 
 # Keep these folders but ignore contents (use README.md as placeholder)
 # Images will be committed, but this helps track empty folders
+
+# Throwaway theme-pinned copies used for screenshots
+_preview-*.html
+_probe.html

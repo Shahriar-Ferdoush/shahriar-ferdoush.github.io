@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projects by Shahriar Ferdoush Sifat - machine learning and LLM systems, graphics, full-stack applications, and early work."
+    />
+    <title>Projects &mdash; Shahriar Ferdoush Sifat</title>
+    <link rel="stylesheet" href="css/style.css?v=5.3" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="topnav" aria-label="Sections">
+      <div class="topnav-inner">
+        <a class="topnav-name" href="index.html">Shahriar Ferdoush Sifat</a>
+        <ul class="topnav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-live="polite">
+              Dark
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <header class="subpage-head">
+        <h1>Projects</h1>
+        <p class="bio">
+          Everything I have built and kept, grouped by what it is. Jump to
+          <a href="#ml">machine learning</a>,
+          <a href="#graphics">graphics and systems</a>,
+          <a href="#fullstack">full-stack applications</a>, or
+          <a href="#early">early work</a>.
+        </p>
+      </header>
+
+      <section id="ml">
+        <h2>Machine Learning &amp; LLM Systems</h2>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>CodeMyPaper</h3>
+            <p class="entry-meta">Go, Ollama, Docker, CI/CD, supply-chain security &middot; 2026</p>
+            <p>
+              A terminal tool that reads an arXiv ML paper and generates a
+              runnable PyTorch reference implementation of its core method
+              through a self-correcting generate&ndash;test&ndash;repair loop:
+              it writes an implementation, executes it, reads the failure, and
+              revises. Shipped with automated CI, versioned releases and a
+              signed, SBOM'd container image: the full path from research
+              artifact to reproducible, deployed software.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/codemypaper" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>GPT-2 (124M) from scratch</h3>
+            <p class="entry-meta">PyTorch, distributed training &middot; 2024</p>
+            <p>
+              Implemented the GPT-2 (124M) architecture and training loop from
+              first principles, including attention, tokenizer and optimization,
+              then tokenized the FineWeb-Edu dataset and trained on one billion
+              tokens across distributed processes on dual Kaggle T4 GPUs.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/GPT2-124M-1B-Token" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Fine-tuning LLaMA 3 on a doctor&ndash;patient conversational dataset</h3>
+            <p class="entry-meta">Hugging Face, PyTorch, QLoRA &middot; 2024</p>
+            <p>
+              Used the Hugging Face library to fine-tune the LLaMA-3-8B model
+              with QLoRA for parameter- and memory-efficient adaptation within a
+              consumer-grade GPU budget.
+            </p>
+            <p class="entry-links">
+              <a href="https://www.kaggle.com/code/shahriarferdoush/fine-tune-llm-doctor-consulting-dataset" target="_blank" rel="noopener">notebook</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>MBTI personality prediction</h3>
+            <p class="entry-meta">BERT, PyTorch, Pandas, Matplotlib &middot; 2024</p>
+            <p>
+              Fine-tuned BERT on the social media posts of different people
+              under several framings of the task, and used the result to predict
+              personality type.
+            </p>
+            <p class="entry-links">
+              <a href="https://colab.research.google.com/drive/1kwehwHfAvy8_h94VZrJTcOGcHcNw4eWn?usp=sharing" target="_blank" rel="noopener">notebook</a>
+              <a href="https://github.com/Shahriar-Ferdoush/Myers-Briggs-Personality-Prediction" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>CharGPT</h3>
+            <p class="entry-meta">PyTorch &middot; 2024</p>
+            <p>
+              A character-level transformer language model written from scratch
+              &mdash; the smaller exercise that preceded the GPT-2
+              reimplementation, and where the attention mechanism first became
+              concrete for me rather than notation.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/CharGPT" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>LeNet-5 on MNIST</h3>
+            <p class="entry-meta">PyTorch &middot; 2022</p>
+            <p>
+              The original convolutional architecture reimplemented from the
+              paper and trained for handwritten digit recognition.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/Digit-Recognition-LeNet5-on-MNIST-Dataset" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="graphics">
+        <h2>Graphics &amp; Systems</h2>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Ray tracer from scratch</h3>
+            <p class="entry-meta">C++, computer graphics &middot; 2023</p>
+            <p>
+              A recursive ray tracer built without a graphics library:
+              ray&ndash;object intersection for spheres, triangles and general
+              quadric surfaces, Phong illumination, reflection to arbitrary
+              depth, and a fully movable camera with six-axis control.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/CSE410_RayTracing_Offline" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="fullstack">
+        <h2>Full-Stack Applications</h2>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>HRXcelerate</h3>
+            <p class="entry-meta">Integrated system design, Django, PostgreSQL &middot; 2023</p>
+            <p>
+              A human resource information system covering employee information
+              management, applicant and recruitment tracking, and payroll
+              administration.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/utchchhwas/hrxcelerate" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Surokkha &mdash; vaccination and certification tracking</h3>
+            <p class="entry-meta">Node.js, Oracle SQL &middot; 2021</p>
+            <p>
+              Full-stack system for vaccine registration, appointment
+              scheduling, certificate issuance, and national and hospital
+              inventory tracking.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/farhan19999/surokkha_v1" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="early">
+        <h2>Embedded &amp; Early Work</h2>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Automated office entrance system</h3>
+            <p class="entry-meta">Arduino, embedded C &middot; 2022</p>
+            <p>
+              Sensor-driven embedded system for automatic entrance access, crowd
+              management, suspicious-behaviour monitoring and forced-entry
+              prevention.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Game control with OpenCV</h3>
+            <p class="entry-meta">Python, OpenCV &middot; 2021</p>
+            <p>
+              Playing games with webcam-tracked hand gestures mapped onto mouse
+              and key events.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/Game-Control-with-OpenCV-and-Python-3.8" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Flappy Bird</h3>
+            <p class="entry-meta">Python, pygame &middot; 2020</p>
+            <p>The classic game rebuilt from scratch in Python with pygame.</p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/Flappy-Bird" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>ICE AGE</h3>
+            <p class="entry-meta">C, iGraphics &middot; 2019</p>
+            <p>
+              A 2D game written in C with iGraphics, built with Sultanul Arifin
+              as our first-year term project. One of the first real programs I
+              wrote.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/ICE-AGE" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <p><a href="index.html">&larr; Back to home</a></p>
+        <p class="colophon">Last updated August 2026.</p>
+      </footer>
+    </main>
+
+    <script src="js/main.js?v=5.3"></script>
+  </body>
+</html>

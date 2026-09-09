@@ -5,877 +5,507 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Shahriar Ferdoush Sifat - Full-Stack Software Engineer & AI/ML Researcher"
+      content="Shahriar Ferdoush Sifat - efficient LLM development and deployment, on-device model adaptation, privacy, trustworthiness and supply chain security."
     />
-    <title>Shahriar Ferdoush Sifat | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css?v=2.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>Shahriar Ferdoush Sifat</title>
+    <link rel="stylesheet" href="css/style.css?v=5.3" />
+    <script>
+      (function () {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="container">
-        <div class="nav-brand">
-          <a href="#home">SFS</a>
-        </div>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#github-contributions" class="nav-link">GitHub</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+    <nav class="topnav" aria-label="Sections">
+      <div class="topnav-inner">
+        <a class="topnav-name" href="index.html">Shahriar Ferdoush Sifat</a>
+        <ul class="topnav-links">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-live="polite">
+              Dark
+            </button>
+          </li>
         </ul>
-        <div class="nav-controls">
-          <button
-            class="theme-toggle"
-            id="theme-toggle"
-            aria-label="Toggle theme"
-          >
-            <div class="theme-toggle-slider">
-              <i class="fas fa-sun theme-toggle-icon"></i>
-            </div>
-          </button>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            <span class="typing-text">Hi, I'm Shahriar Ferdoush Sifat</span>
-          </h1>
-          <p class="hero-subtitle">
-            Full-Stack Software Engineer & AI/ML Researcher
+    <main>
+      <header class="masthead">
+        <div class="masthead-text">
+          <h1>Shahriar Ferdoush Sifat</h1>
+          <p class="role">
+            Efficient LLM development and deployment &middot; PhD applicant, Fall 2027
           </p>
-          <p class="hero-description">
-            I am a Computer Science and Engineering graduate from BUET with a
-            passion for <strong>Artificial Intelligence</strong> and
-            <strong>Machine Learning</strong>, particularly focused on Large
-            Language Models.
+          <p class="bio">
+            I studied Computer Science and Engineering at
+            <a href="https://www.buet.ac.bd/" target="_blank" rel="noopener">BUET</a>.
+            In industry since then, I have helped organizations build custom
+            LLM systems while ensuring data confidentiality, and have processed,
+            analyzed and visualized large industrial documents and datasets to
+            support investors and government bodies.
           </p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get in Touch</a>
-            <a href="#projects" class="btn btn-secondary">View My Work</a>
-          </div>
-          <div class="social-links">
-            <a
-              href="https://github.com/Shahriar-Ferdoush"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/shahriar-ferdoush-sifat/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:shahriar.ss1212@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/@ShahriarFerdoush"
-              target="_blank"
-              aria-label="YouTube"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
+          <p class="bio">
+            My research interest lies in efficient LLM development and
+            deployment, and in on-device model adaptation while ensuring
+            privacy, trustworthiness, and supply chain security.
+          </p>
+          <nav class="links" aria-label="Profiles and contact">
+            <a href="mailto:shahriar.ss1212@gmail.com">Email</a>
+            <!-- Points at Contact until the anonymized CV PDF is in place.
+                 Restore: <a href="cv/Shahriar_Ferdoush_Sifat_CV.pdf">CV</a> -->
+            <a href="#contact">CV</a>
+            <a href="https://github.com/Shahriar-Ferdoush" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/shahriar-ferdoush-sifat/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.youtube.com/@ShahriarFerdoush" target="_blank" rel="noopener">YouTube</a>
+          </nav>
         </div>
-        <div class="hero-image">
+        <div class="masthead-photo">
           <img
-            src="images/profile/hero-profile.png"
+            src="images/profile/hero-profile-400.jpg"
             alt="Shahriar Ferdoush Sifat"
-            class="profile-image"
-            width="280"
-            height="280"
+            width="180"
+            height="180"
+          />
+        </div>
+      </header>
+
+      <section id="research">
+        <h2>Research</h2>
+
+        <!-- The first entry is deliberately unnamed: the paper is under
+             double-blind review, so no title, author list, venue or exact
+             result belongs on a page that carries my name. The full version is
+             kept in TODO.md - restore it after notification. -->
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Model merging and task-vector selection</h3>
+            <p class="entry-meta">Paper under review &middot; 2026</p>
+            <p>
+              Merging task vectors is the cheap alternative to multi-task
+              retraining: it composes capabilities from checkpoints that were
+              fine-tuned independently, at the cost of an addition. My current
+              work is on deciding which entries of a task vector to keep as the
+              drop rate rises, and on what a merged model loses when those
+              decisions are made badly.
+            </p>
+            <p>
+              The method matches the state of the art at standard drop rates and
+              pulls clearly ahead at aggressive ones, holding its accuracy at
+              drop rates of 90% and above where existing methods degrade sharply.
+            </p>
+            <p class="entry-advisors">
+              Supervised by <em>Dr. Mohammed Eunus Ali</em> (Associate
+              Professor, Monash University) and <em>Dr. Saddam Mukta</em>
+              (Postdoctoral Researcher, LUT).
+            </p>
+            <p class="entry-note">
+              A paper from this work is under double-blind review, so I am
+              keeping the specifics off this page until the review period ends
+              &mdash; I am glad to discuss it directly,
+              <a href="#contact">get in touch</a>.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>
+              Enhancing Optical Coherence Tomography with Modified Deep Image
+              Prior for Improved Denoising via Early Stopping Convergence
+            </h3>
+            <p class="entry-meta">Undergraduate thesis, BUET &middot; 2024</p>
+            <p>
+              Deep Image Prior denoises from a single noisy observation by using
+              the network architecture itself as the prior, with no clean
+              training data. Its weakness is knowing when to stop: run too long
+              and the network fits the noise. I modified the early stopping
+              criterion to detect that crossover sooner, reaching better
+              denoising performance in far fewer iterations, and implemented the
+              method independently in both PyTorch and TensorFlow.
+            </p>
+            <p>
+              The question underneath it &mdash; when has a network fit signal
+              rather than noise, and which parameters carry which &mdash; is the
+              same question that sent me toward model merging.
+            </p>
+            <p class="entry-links">
+              <a href="https://www.kaggle.com/code/shahriarferdoush/full-run-deep-image-prior-paper-unet" target="_blank" rel="noopener">notebook</a>
+              <a href="https://github.com/Shahriar-Ferdoush/Deep-Image-Prior-Tensorflow-" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <dl class="listing">
+          <dt>July 2024</dt>
+          <dd>
+            <strong>Bangladesh University of Engineering and Technology</strong><br />
+            B.Sc. in Computer Science and Engineering &middot; CGPA 3.32 / 4.00
+          </dd>
+        </dl>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+
+        <dl class="listing">
+          <dt>2026 &ndash; present</dt>
+          <dd>
+            <strong>AI Engineer</strong>, HAP International &middot; Remote
+            <ul>
+              <li>
+                Scrape, store and process large industrial reports and datasets
+                to produce local, regional and national insights.
+              </li>
+              <li>
+                Built the data processing and visualization pipeline that turns
+                those insights into material for businesses, investors and
+                policymakers.
+              </li>
+            </ul>
+          </dd>
+
+          <dt>2024 &ndash; present</dt>
+          <dd>
+            <strong>Full-Stack Software Engineer</strong>, ResTechAI &middot; Remote
+            <ul>
+              <li>
+                Built and deployed specialized AI agents, fact-checking and
+                analytical, performing deep data analysis with configurable
+                output formats.
+              </li>
+              <li>
+                Developed RESTful APIs bridging LLM services with structured and
+                unstructured databases, and exposed API access through
+                chat-based interaction.
+              </li>
+              <li>
+                Created LLM-driven extraction from complex websites and generic
+                sources such as email, cloud storage and servers, with an
+                information-masking pipeline that keeps the underlying data
+                private.
+              </li>
+              <li>
+                Owned end-to-end deployment, including a configurable RAG
+                pipeline, in Docker.
+              </li>
+            </ul>
+            <p class="entry-note">
+              LLaMA 3, Gemini, Groq, DeepSeek, PandasAI &middot; Playwright,
+              Unstructured, BeautifulSoup &middot; PostgreSQL, MySQL, ChromaDB,
+              Supabase &middot; Poetry, Docker
+            </p>
+          </dd>
+
+          <dt>2023</dt>
+          <dd>
+            <strong>Machine Learning Intern</strong>, ERA-InfoTech &middot; Dhaka
+            <ul>
+              <li>
+                Cleaned, preprocessed and clustered the financial transaction
+                records of one million users, and analyzed the resulting
+                customer segments.
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>CodeMyPaper</h3>
+            <p class="entry-meta">Go, Ollama, Docker, CI/CD, supply-chain security &middot; 2026</p>
+            <p>
+              A terminal tool that reads an arXiv ML paper and generates a
+              runnable PyTorch reference implementation of its core method
+              through a self-correcting generate&ndash;test&ndash;repair loop.
+              Shipped with automated CI, versioned releases and a signed, SBOM'd
+              container image: the full path from research artifact to
+              reproducible, deployed software.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/codemypaper" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>GPT-2 (124M) from scratch</h3>
+            <p class="entry-meta">PyTorch, distributed training &middot; 2024</p>
+            <p>
+              Implemented the GPT-2 (124M) architecture and training loop from
+              first principles, including attention, tokenizer and optimization,
+              then tokenized the FineWeb-Edu dataset and trained across
+              distributed processes on dual Kaggle T4 GPUs.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/Shahriar-Ferdoush/GPT2-124M-1B-Token" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Fine-tuning LLaMA 3 on a doctor&ndash;patient conversational dataset</h3>
+            <p class="entry-meta">Hugging Face, PyTorch, QLoRA &middot; 2024</p>
+            <p>
+              Used the Hugging Face library to fine-tune the LLaMA-3-8B model
+              with QLoRA for parameter- and memory-efficient adaptation.
+            </p>
+            <p class="entry-links">
+              <a href="https://www.kaggle.com/code/shahriarferdoush/fine-tune-llm-doctor-consulting-dataset" target="_blank" rel="noopener">notebook</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>MBTI personality prediction</h3>
+            <p class="entry-meta">BERT, PyTorch, Pandas, Matplotlib &middot; 2024</p>
+            <p>
+              Fine-tuned BERT on the social media posts of different people
+              under several framings of the task, and used the result to predict
+              personality type.
+            </p>
+            <p class="entry-links">
+              <a href="https://colab.research.google.com/drive/1kwehwHfAvy8_h94VZrJTcOGcHcNw4eWn?usp=sharing" target="_blank" rel="noopener">notebook</a>
+              <a href="https://github.com/Shahriar-Ferdoush/Myers-Briggs-Personality-Prediction" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>HRXcelerate</h3>
+            <p class="entry-meta">Integrated system design, Django, PostgreSQL &middot; 2023</p>
+            <p>
+              A human resource information system covering employee information
+              management, applicant and recruitment tracking, and payroll
+              administration.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/utchchhwas/hrxcelerate" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Surokkha &mdash; vaccination and certification tracking</h3>
+            <p class="entry-meta">Node.js, Oracle SQL &middot; 2021</p>
+            <p>
+              Full-stack system for vaccine registration, appointment
+              scheduling, certificate issuance, and national and hospital
+              inventory tracking.
+            </p>
+            <p class="entry-links">
+              <a href="https://github.com/farhan19999/surokkha_v1" target="_blank" rel="noopener">code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="entry entry--plain">
+          <div class="entry-body">
+            <h3>Automated office entrance system</h3>
+            <p class="entry-meta">Arduino, embedded C &middot; 2022</p>
+            <p>
+              Sensor-driven embedded system for automatic entrance access, crowd
+              management, suspicious-behaviour monitoring and forced-entry
+              prevention.
+            </p>
+          </div>
+        </article>
+
+        <p class="more"><a href="projects.html">All projects &rarr;</a></p>
+      </section>
+
+      <section id="code">
+        <h2>Code</h2>
+        <p>
+          Most of my work is public on
+          <a href="https://github.com/Shahriar-Ferdoush" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+        <div class="heatmap">
+          <img
+            src="https://ghchart.rshah.org/2f6f5e/Shahriar-Ferdoush"
+            alt="GitHub contribution chart for Shahriar-Ferdoush over the past year"
             loading="lazy"
           />
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="mouse"></div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <!-- <section id="about" class="about section">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content-full">
-          <p class="about-intro">
-            I am a Computer Science and Engineering graduate from BUET with a
-            passion for <strong>Artificial Intelligence</strong> and
-            <strong>Machine Learning</strong>, particularly focused on Large
-            Language Models.
-          </p>
-          <p class="about-intro">
-            [Add more about your research interests, career goals, and what
-            drives your passion for AI/ML here]
-          </p>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Research/Thesis Section -->
-    <section id="research" class="research section section-dark">
-      <div class="container">
-        <h2 class="section-title">Research & Thesis</h2>
-        <div class="research-grid">
-          <div class="research-card">
-            <div class="research-tag">Ongoing - Masters</div>
-            <h3>Building Small Adaptive LLMs</h3>
-            <p class="research-subtitle">
-              A Pipeline for Task-Specific Fine-Tuning, Model Merging, and
-              Knowledge Updates
-            </p>
-            <p>
-              Developing an end-to-end pipeline to tune small large language
-              models finetuned for diverse tasks and merge them using different
-              merging methods. Finally, using lifelong knowledge editing
-              techniques to update merged models for keeping them up-to-date
-              with new information.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">HuggingFace</span>
-              <span class="tech-tag">Model Merging</span>
-              <span class="tech-tag">Knowledge Editing</span>
-            </div>
-            <div class="research-links">
-              <a
-                href="https://github.com/Shahriar-Ferdoush/Model-Merging"
-                target="_blank"
-                class="link-btn"
-              >
-                <i class="fab fa-github"></i> Repository 1
-              </a>
-              <a
-                href="https://github.com/Shahriar-Ferdoush/test"
-                target="_blank"
-                class="link-btn"
-              >
-                <i class="fab fa-github"></i> Repository 2
-              </a>
-            </div>
-          </div>
-          <div class="research-card">
-            <div class="research-tag">Completed - Undergraduate</div>
-            <h3>Enhancing OCT with Modified Deep Image Prior</h3>
-            <p class="research-subtitle">
-              Improved Denoising via Early Stopping Convergence
-            </p>
-            <p>
-              Uses a network architecture as a prior to learn the features for
-              the image and uses the generative technique to iteratively
-              generate denoised images based on only one noisy data. Achieved
-              better denoising performance with significantly fewer iterations.
-            </p>
-            <div class="tech-stack">
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">TensorFlow</span>
-              <span class="tech-tag">Matplotlib</span>
-              <span class="tech-tag">U-Net</span>
-            </div>
-            <div class="research-links">
-              <a
-                href="https://www.kaggle.com/code/shahriarferdoush/full-run-deep-image-prior-paper-unet"
-                target="_blank"
-                class="link-btn"
-              >
-                <i class="fas fa-external-link-alt"></i> View on Kaggle
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section">
-      <div class="container">
-        <h2 class="section-title">Education</h2>
-        <div class="education-content">
-          <div class="education-card">
-            <div class="education-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="education-details">
-              <h3>B.Sc. in Computer Science and Engineering</h3>
-              <p class="education-institution">
-                Bangladesh University of Engineering and Technology (BUET)
-              </p>
-              <p class="education-date">Graduated: July 2024</p>
-              <p class="education-location">
-                <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience section section-dark">
-      <div class="container">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Full-Stack Software Engineer</h3>
-                <span class="timeline-badge">Fully Remote</span>
-              </div>
-              <p class="timeline-company">ResTechAI - USA-based startup</p>
-              <p class="timeline-date">July 2024 - Present</p>
-              <ul class="timeline-description">
-                <li>
-                  Developed full-stack AI-driven solutions, including scraping
-                  websites and extracting structured/unstructured data using
-                  LLMs with the goal of prototyping faster and developing
-                  minimum viable products
-                </li>
-                <li>Automated API access through chat-based interactions</li>
-                <li>
-                  Created RAG pipeline with flexible model and database options
-                  managing structured and unstructured data across databases and
-                  vector databases
-                </li>
-                <li>
-                  Developed fact checker agents and analytical agents for deep
-                  analysis with option to output response on diverse sink
-                  options
-                </li>
-                <li>
-                  Deployed and maintained applications in Docker environments
-                  for seamless operation across backend, frontend, and local
-                  LLMs
-                </li>
-              </ul>
-              <div class="tech-stack">
-                <span class="tech-tag">Llama3</span>
-                <span class="tech-tag">Gemini</span>
-                <span class="tech-tag">Groq</span>
-                <span class="tech-tag">Playwright</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">ChromaDB</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">Poetry</span>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <h3>Virtual Intern</h3>
-                <span class="timeline-badge">Internship</span>
-              </div>
-              <p class="timeline-company">ERA-InfoTech Limited</p>
-              <p class="timeline-date">2023</p>
-              <ul class="timeline-description">
-                <li>
-                  Completed Machine Learning based analysis and clustering of
-                  financial transactional data
-                </li>
-                <li>
-                  Performed data cleaning and preprocessing on financial
-                  transactional data of 1M users
-                </li>
-              </ul>
-              <div class="tech-stack">
-                <span class="tech-tag">Machine Learning</span>
-                <span class="tech-tag">Data Analysis</span>
-                <span class="tech-tag">Python</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GitHub Contributions Section -->
-    <section id="github-contributions" class="github-contributions section">
-      <div class="container">
-        <h2 class="section-title">GitHub Activity</h2>
-        <!-- <p class="section-subtitle">
-          My open source contributions and coding activity
-        </p> -->
-
-        <!-- GitHub Stats Cards -->
-        <!-- <div class="github-stats-grid">
-          <div class="github-stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-code-branch"></i>
-            </div>
-            <div class="stat-content">
-              <h3 class="stat-number" id="total-commits">Loading...</h3>
-              <p class="stat-label">Total Commits</p>
-            </div>
-          </div>
-
-          <div class="github-stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-code-pull-request"></i>
-            </div>
-            <div class="stat-content">
-              <h3 class="stat-number" id="pull-requests">Loading...</h3>
-              <p class="stat-label">Pull Requests</p>
-            </div>
-          </div>
-
-          <div class="github-stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-circle-exclamation"></i>
-            </div>
-            <div class="stat-content">
-              <h3 class="stat-number" id="issues">Loading...</h3>
-              <p class="stat-label">Issues</p>
-            </div>
-          </div>
-
-          <div class="github-stat-card">
-            <div class="stat-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="stat-content">
-              <h3 class="stat-number" id="total-stars">Loading...</h3>
-              <p class="stat-label">Total Stars</p>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- GitHub Contribution Graph -->
-        <div class="github-graph-section">
-          <div class="graph-header">
-            <h3>Contribution Activity</h3>
-            <span class="contribution-count" id="contribution-count"
-              >Loading contributions...</span
-            >
-          </div>
-          <div class="github-graph-container">
-            <img
-              id="contribution-chart"
-              src="https://ghchart.rshah.org/0071e3/Shahriar-Ferdoush"
-              alt="Shahriar Ferdoush's GitHub Contribution Chart"
-              class="github-chart"
-            />
-            <div class="year-selector">
-              <label for="contribution-year">Year:</label>
-              <select id="contribution-year" class="year-dropdown">
-                <option value="last">Last Year</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        <!-- GitHub Profile Stats -->
-        <div class="github-profile-stats">
-          <div class="profile-stat-card">
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=Shahriar-Ferdoush&show_icons=true&theme=default&hide_border=true&bg_color=ffffff&title_color=0071e3&icon_color=0071e3&text_color=1d1d1f"
-              alt="GitHub Stats"
-              class="github-stats-img"
-            />
-          </div>
-
-          <div class="profile-stat-card">
-            <img
-              src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shahriar-Ferdoush&layout=compact&theme=default&hide_border=true&bg_color=ffffff&title_color=0071e3&text_color=1d1d1f"
-              alt="Most Used Languages"
-              class="github-stats-img"
-            />
-          </div>
-        </div>
-
-        <!-- GitHub Streak Stats -->
-        <div class="github-streak-section">
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=Shahriar-Ferdoush&theme=default&hide_border=true&background=ffffff&ring=0071e3&fire=0071e3&currStreakLabel=1d1d1f&sideLabels=1d1d1f&currStreakNum=0071e3&sideNums=0071e3"
-            alt="GitHub Streak Stats"
-            class="github-streak-img"
-          />
-        </div>
-
-        <!-- View Profile Button -->
-        <div class="github-profile-link">
-          <a
-            href="https://github.com/Shahriar-Ferdoush"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fab fa-github"></i> View Full GitHub Profile
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section section-dark">
-      <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <i class="fas fa-brain"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>MBTI Personality Prediction</h3>
-              <p>
-                Fine-tuning BERT model using social media posts of different
-                persons to predict personality types.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-tag">BERT</span>
-                <span class="tech-tag">PyTorch</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">NLP</span>
-              </div>
-              <a
-                href="https://colab.research.google.com/drive/1kwehwHfAvy8_h94VZrJTcOGcHcNw4eWn?usp=sharing"
-                target="_blank"
-                class="project-link"
-              >
-                View Project <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <i class="fas fa-users"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>HRXcelerate</h3>
-              <p>
-                A comprehensive human resource information system including
-                employee management, recruitment tracking, and payroll
-                administration.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-tag">Django</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">System Design</span>
-              </div>
-              <a
-                href="https://github.com/utchchhwas/hrxcelerate"
-                target="_blank"
-                class="project-link"
-              >
-                View Project <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <i class="fas fa-shopping-cart"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>BuyMeAtDaraz</h3>
-              <p>
-                Scrapes Daraz based on user queries, stores data in database,
-                and provides chat-based product recommendations using LLMs.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-tag">Playwright</span>
-                <span class="tech-tag">Langchain</span>
-                <span class="tech-tag">SQLite</span>
-                <span class="tech-tag">LLM</span>
-              </div>
-              <a
-                href="https://github.com/Shahriar-Ferdoush/BuyMeAtDaraz"
-                target="_blank"
-                class="project-link"
-              >
-                View Project <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <i class="fas fa-robot"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>GPT2-124M from Scratch</h3>
-              <p>
-                Built GPT-2 124M parameter model from scratch, tokenized
-                fineweb-edu dataset and trained the model using distributed
-                processes.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-tag">PyTorch</span>
-                <span class="tech-tag">Distributed Training</span>
-                <span class="tech-tag">NLP</span>
-              </div>
-              <a
-                href="https://github.com/Shahriar-Ferdoush/GPT2-124M-1B-Token"
-                target="_blank"
-                class="project-link"
-              >
-                View Project <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <i class="fas fa-stethoscope"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Fine-tuning Llama 3</h3>
-              <p>
-                Fine-tuned Llama3-8B model on Doctor-Patient conversational
-                dataset using QLoRA for efficient fine-tuning.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-tag">HuggingFace</span>
-                <span class="tech-tag">Llama 3</span>
-                <span class="tech-tag">QLoRA</span>
-              </div>
-              <a
-                href="https://www.kaggle.com/code/shahriarferdoush/fine-tune-llm-doctor-consulting-dataset"
-                target="_blank"
-                class="project-link"
-              >
-                View Project <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <i class="fas fa-syringe"></i>
-              </div>
-            </div>
-            <div class="project-content">
-              <h3>Surokkha - Vaccination System</h3>
-              <p>
-                Database project for vaccination and certification tracking with
-                vaccine registration, scheduling, and inventory management.
-              </p>
-              <div class="tech-stack">
-                <span class="tech-tag">OracleSQL</span>
-                <span class="tech-tag">Database Design</span>
-                <span class="tech-tag">PL/SQL</span>
-              </div>
-              <a
-                href="https://github.com/farhan19999/CSE216-Database-Project"
-                target="_blank"
-                class="project-link"
-              >
-                View Project <i class="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-      <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Programming Languages</h3>
-            <div class="skill-items">
-              <span class="skill-badge proficient">Python</span>
-              <span class="skill-badge proficient">Java</span>
-              <span class="skill-badge">C</span>
-              <span class="skill-badge">C++</span>
-              <span class="skill-badge">JavaScript</span>
-              <span class="skill-badge">Bash</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Web Development</h3>
-            <div class="skill-items">
-              <span class="skill-badge">HTML/CSS</span>
-              <span class="skill-badge">Bootstrap</span>
-              <span class="skill-badge">React.JS</span>
-              <span class="skill-badge">Django</span>
-              <span class="skill-badge">Node.JS</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <h3>Databases</h3>
-            <div class="skill-items">
-              <span class="skill-badge">PostgreSQL</span>
-              <span class="skill-badge">OracleSQL</span>
-              <span class="skill-badge">SQLite</span>
-              <span class="skill-badge">ChromaDB</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3>ML & Data Science</h3>
-            <div class="skill-items">
-              <span class="skill-badge">TensorFlow</span>
-              <span class="skill-badge">PyTorch</span>
-              <span class="skill-badge">Langchain</span>
-              <span class="skill-badge">Pandas</span>
-              <span class="skill-badge">NumPy</span>
-              <span class="skill-badge">Matplotlib</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-tools"></i>
-            </div>
-            <h3>Tools & Others</h3>
-            <div class="skill-items">
-              <span class="skill-badge">Git</span>
-              <span class="skill-badge">Docker</span>
-              <span class="skill-badge">LaTeX</span>
-              <span class="skill-badge">Poetry</span>
-              <span class="skill-badge">Adobe Suite</span>
-              <span class="skill-badge">Blender</span>
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <div class="skill-icon">
-              <i class="fas fa-robot"></i>
-            </div>
-            <h3>LLMs & AI Tools</h3>
-            <div class="skill-items">
-              <span class="skill-badge">Llama 3</span>
-              <span class="skill-badge">Gemini</span>
-              <span class="skill-badge">Groq</span>
-              <span class="skill-badge">Deepseek</span>
-              <span class="skill-badge">BERT</span>
-              <span class="skill-badge">GPT-2</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications section section-dark">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-grid">
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Deep Learning Specialization</h3>
-            <p class="cert-provider">DeepLearning.AI (via Coursera)</p>
-            <a
-              href="https://coursera.org/share/87b509b33cf9c13046e29146c1395915"
-              target="_blank"
-              class="cert-verify"
-            >
-              <i class="fas fa-check-circle"></i> Verify Certificate
-            </a>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Mathematics for Machine Learning Specialization</h3>
-            <p class="cert-provider">Imperial College London (via Coursera)</p>
-            <a
-              href="https://coursera.org/share/87b509b33cf9c13046e29146c1395915"
-              target="_blank"
-              class="cert-verify"
-            >
-              <i class="fas fa-check-circle"></i> Verify Certificate
-            </a>
-          </div>
-          <div class="cert-card">
-            <div class="cert-icon">
-              <i class="fas fa-certificate"></i>
-            </div>
-            <h3>Object Oriented Programming with Java</h3>
-            <p class="cert-provider">Coursera Project Network</p>
-            <a
-              href="https://coursera.org/share/6aeaeea2c737f029d5830bc51a73d6c1"
-              target="_blank"
-              class="cert-verify"
-            >
-              <i class="fas fa-check-circle"></i> Verify Certificate
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements section section-dark">
-      <div class="container">
-        <h2 class="section-title">Achievements & Awards</h2>
-        <div class="achievements-grid">
-          <div class="achievement-card">
-            <div class="achievement-icon">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <h3>Dean's Award</h3>
-            <p class="achievement-org">
-              Bangladesh University of Engineering and Technology (BUET)
-            </p>
-            <p class="achievement-year">2020</p>
-          </div>
-          <div class="achievement-card">
-            <div class="achievement-icon">
-              <i class="fas fa-medal"></i>
-            </div>
-            <h3>Regional Champion</h3>
-            <p class="achievement-org">Bangladesh Physics Olympiad</p>
-            <p class="achievement-year">2016</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- YouTube Videos Section -->
-    <section id="youtube" class="youtube-section section">
-      <div class="container">
-        <h2 class="section-title">Featured YouTube Videos</h2>
-        <div class="youtube-videos-grid" id="youtube-videos">
-          <!-- Loading state -->
-          <div class="video-loading">
-            <i class="fab fa-youtube"></i>
-            <p>Loading videos...</p>
-          </div>
-        </div>
-        <div class="youtube-channel-link">
-          <a
-            href="https://www.youtube.com/@ShahriarFerdoush"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fab fa-youtube"></i> Visit My YouTube Channel
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section section-dark">
-      <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-subtitle">
-          I'm always open to discussing new projects, creative ideas, or
-          opportunities to be part of your vision.
+      <section id="teaching">
+        <h2>Teaching &amp; Outreach</h2>
+        <p>
+          I run a
+          <a href="https://www.youtube.com/@ShahriarFerdoush" target="_blank" rel="noopener">YouTube channel</a>
+          and write blogs on the Bangladeshi university entrance process,
+          walking students through exam preparation and admissions strategy for
+          BUET and the other public engineering universities. The material has
+          guided thousands of applicants, most of whom have no other access to
+          this kind of help.
         </p>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Email</h3>
-                <a href="mailto:shahriar.ss1212@gmail.com"
-                  >shahriar.ss1212@gmail.com</a
-                >
-                <a href="mailto:1805101@ugrad.cse.buet.ac.bd"
-                  >1805101@ugrad.cse.buet.ac.bd</a
-                >
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Phone</h3>
-                <a href="tel:+8801758616694">+880 1758616694</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-details">
-                <h3>Location</h3>
-                <p>Dhaka, Bangladesh</p>
-              </div>
-            </div>
-          </div>
-          <div class="contact-social">
-            <h3>Connect With Me</h3>
-            <div class="social-links-large">
-              <a
-                href="https://github.com/Shahriar-Ferdoush"
-                target="_blank"
-                class="social-btn"
-              >
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/shahriar-ferdoush-sifat/"
-                target="_blank"
-                class="social-btn"
-              >
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-              </a>
-              <a href="mailto:shahriar.ss1212@gmail.com" class="social-btn">
-                <i class="fas fa-envelope"></i>
-                <span>Email</span>
-              </a>
-            </div>
-          </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <dl class="listing listing--tight">
+          <dt>Programming</dt>
+          <dd>
+            Proficient: Python, Java &middot; Familiar: C, C++, JavaScript,
+            Bash, Go
+          </dd>
+
+          <dt>Web development</dt>
+          <dd>HTML, CSS, Bootstrap, React.js, Django, Node.js</dd>
+
+          <dt>Databases</dt>
+          <dd>PostgreSQL, Oracle PL/SQL, SQLite, ChromaDB</dd>
+
+          <dt>ML &amp; data science</dt>
+          <dd>TensorFlow, PyTorch, LangChain, Pandas, NumPy, Matplotlib</dd>
+
+          <dt>Others</dt>
+          <dd>
+            Git, Docker, LaTeX, Adobe Premiere Pro, Adobe Illustrator, Blender
+          </dd>
+        </dl>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <dl class="listing listing--tight">
+          <dt>2020</dt>
+          <dd>Dean's Award, Faculty of Electrical and Electronic Engineering, BUET</dd>
+
+          <dt>2016</dt>
+          <dd>Regional Champion, Bangladesh Physics Olympiad</dd>
+        </dl>
+      </section>
+
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <ul class="compact">
+          <li>IELTS &mdash; Band 7.5, no band below 7.0.</li>
+          <li>
+            Deep Learning Specialization, DeepLearning.AI through Coursera
+            <a href="https://coursera.org/share/87b509b33cf9c13046e29146c1395915" target="_blank" rel="noopener">(verify)</a>
+          </li>
+          <li>
+            Mathematics for Machine Learning Specialization, Imperial College
+            London through Coursera
+            <a href="https://coursera.org/share/87b509b33cf9c13046e29146c1395915" target="_blank" rel="noopener">(verify)</a>
+          </li>
+          <li>
+            Object Oriented Programming with Java, Coursera Project Network
+            <a href="https://coursera.org/share/6aeaeea2c737f029d5830bc51a73d6c1" target="_blank" rel="noopener">(verify)</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="beyond">
+        <h2>Beyond Research</h2>
+        <p>
+          Away from the screen I photograph, sketch in graphite, and build
+          things in Blender.
+        </p>
+
+        <!--
+          GALLERY - currently disabled because images/creative/ is empty, and a
+          grid of broken tiles is worse than no grid.
+
+          To switch it on: drop 01.jpg ... 08.jpg into images/creative/ (see the
+          README there), then delete this comment wrapper.
+
+        <div class="gallery">
+          <figure>
+            <img src="images/creative/01.jpg" alt="" loading="lazy" />
+            <figcaption>Photography</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/02.jpg" alt="" loading="lazy" />
+            <figcaption>Photography</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/03.jpg" alt="" loading="lazy" />
+            <figcaption>Sketch</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/04.jpg" alt="" loading="lazy" />
+            <figcaption>Sketch</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/05.jpg" alt="" loading="lazy" />
+            <figcaption>Digital illustration</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/06.jpg" alt="" loading="lazy" />
+            <figcaption>Digital illustration</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/07.jpg" alt="" loading="lazy" />
+            <figcaption>Blender render</figcaption>
+          </figure>
+          <figure>
+            <img src="images/creative/08.jpg" alt="" loading="lazy" />
+            <figcaption>Blender render</figcaption>
+          </figure>
         </div>
-      </div>
-    </section>
+        -->
+      </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Shahriar Ferdoush Sifat. All rights reserved.</p>
-        <p class="footer-tagline">Built with passion and lots of ☕</p>
-      </div>
-    </footer>
+      <section id="contact">
+        <h2>Contact</h2>
+        <dl class="listing listing--tight">
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:shahriar.ss1212@gmail.com">shahriar.ss1212@gmail.com</a><br />
+            <a href="mailto:1805101@ugrad.cse.buet.ac.bd">1805101@ugrad.cse.buet.ac.bd</a>
+            <span class="entry-note">(academic)</span>
+          </dd>
 
-    <script src="js/main.js?v=2.0"></script>
+          <dt>Phone</dt>
+          <dd><a href="tel:+8801758616694">+880 1758 616694</a></dd>
+
+          <dt>Elsewhere</dt>
+          <dd>
+            <a href="https://github.com/Shahriar-Ferdoush" target="_blank" rel="noopener">GitHub</a>
+            &middot;
+            <a href="https://www.linkedin.com/in/shahriar-ferdoush-sifat/" target="_blank" rel="noopener">LinkedIn</a>
+            &middot;
+            <a href="https://www.youtube.com/@ShahriarFerdoush" target="_blank" rel="noopener">YouTube</a>
+          </dd>
+
+          <dt>Based in</dt>
+          <dd>Dhaka, Bangladesh</dd>
+
+          <dt>CV</dt>
+          <dd>Please email me for an up-to-date copy.</dd>
+        </dl>
+        <p class="contact-note">
+          I am glad to hear from anyone working on model merging, efficient
+          fine-tuning or knowledge editing, and from prospective advisors and
+          collaborators.
+        </p>
+      </section>
+
+      <footer>
+        <p class="colophon">Last updated August 2026.</p>
+      </footer>
+    </main>
+
+    <script src="js/main.js?v=5.3"></script>
   </body>
 </html>
